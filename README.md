@@ -18,11 +18,8 @@ LunarV2 LITE uses [YOLOv5](https://github.com/ultralytics/yolov5)
 
 3. Run the start.bat file
 
-```
-pip install -r requirements.txt
-```
-
 ## Usage
+If the console is closing immediately, you can run this command to see the errors:
 ```           
 python lunar.py
 ```
