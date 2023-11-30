@@ -1,6 +1,6 @@
 # Lunar V2 LITE
 Lunar V2 LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar).
-The full version of Lunar V2 can be found [here](https://gannonr.com/lunarv2).
+The full version of Lunar V2 can be found [here](https://gannonr.com/lunar).
 
 ## About
 
