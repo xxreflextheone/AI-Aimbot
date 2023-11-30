@@ -1,7 +1,7 @@
 # Lunar V2 LITE
-Lunar V2 LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar)
-The full version of Lunar V2, can be found [here](https://gannonr.com/lunarv2)
-Join the [Discord](https://discord.gg/lunarv2)
+Lunar V2 LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar).
+The full version of Lunar V2 can be found [here](https://gannonr.com/lunarv2).
+
 ## About
 
 Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite. Besides being general purpose, the main advantage of using Lunar is that it does not meddle with the memory of other processes.
@@ -35,4 +35,5 @@ To collect image data for annotating and training:
 python lunar.py collect_data
 ```
 
-
+## Discord
+Join the [Discord](https://discord.gg/lunarv2)
