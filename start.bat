@@ -1,1 +1,2 @@
 python lunar.py
+pause
