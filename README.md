@@ -1,7 +1,7 @@
-# Lunar V2 LITE
-Lunar V2 LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar).
+# Lunar LITE
+Lunar LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar).
 
-Lunar V2 LITE offers small improvements and updated requirements for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
+Lunar LITE offers small improvements and updated requirements for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
 ## Lunar V2
 With Lunar V2, every bit of code has been modified, optimized, added on to.
@@ -12,7 +12,7 @@ The full version of Lunar V2 can be found [here](https://gannonr.com/lunar).
 
 Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite. Besides being general purpose, the main advantage of using Lunar is that it does not meddle with the memory of other processes.
 
-LunarV2 LITE uses [YOLOv5](https://github.com/ultralytics/yolov5)
+Lunar LITE uses [YOLOv5](https://github.com/ultralytics/yolov5)
 
 ![thumbnail](https://github.com/xxreflextheone/lunarv2lite/assets/100484118/c65c3c63-5ab8-4ed5-8dc7-526cee37029a)
 
