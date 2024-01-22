@@ -1,12 +1,12 @@
 # Lunar LITE
-Lunar LITE is an updated version of [Lunar](https://github.com/zeyad-mansour/lunar).
+Lunar LITE is an very slightly edited version of [Lunar](https://github.com/zeyad-mansour/lunar).
 
-Lunar LITE offers small improvements and updated requirements for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
+Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
 ## Lunar V2
-With Lunar V2, every bit of code has been modified, optimized, added on to.
+Lunar V2 on the other hand, has 25+ customizable settings, UI, improved accuracy, and support for YoloV5, YoloV7, & YoloV8.
 
-The full version of Lunar V2 can be found [here](https://gannonr.com/lunar).
+Lunar V2 can be found [here](https://gannonr.com/downloads).
 
 ## About
 
