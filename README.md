@@ -40,4 +40,5 @@ python lunar.py collect_data
 
 ## Discord
 Support is only garenteed for Lunar V2. Please don't demand help for LITE.
+
 Join the [Discord](https://discord.gg/lunarv2)
