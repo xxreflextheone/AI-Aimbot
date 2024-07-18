@@ -1,10 +1,10 @@
 # Lunar LITE
-Lunar LITE is a very slightly edited version of [Lunar](https://github.com/zeyad-mansour/lunar).
+Lunar LITE is built upon [Lunar](https://github.com/zeyad-mansour/lunar).
 
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
 ## Lunar V2
-Lunar V2 on the other hand, has 25+ customizable settings, UI, improved accuracy, and support for YoloV5, YoloV7, & YoloV8.
+Lunar V2 on the other hand, has 25+ customizable settings, UI, improved accuracy, and support for YoloV5, YoloV7, YoloV8, & TensorRT!
 
 Lunar V2 can be found [here](https://gannonr.com/downloads).
 
@@ -12,7 +12,9 @@ Lunar V2 can be found [here](https://gannonr.com/downloads).
 
 Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite. Besides being general purpose, the main advantage of using Lunar is that it does not meddle with the memory of other processes.
 
-Lunar LITE uses [YOLOv5](https://github.com/ultralytics/yolov5)
+Lunar LITE uses [YOLOv8](https://github.com/ultralytics/ultralytics)
+
+![Lunar Lite banner](https://github.com/user-attachments/assets/05864acf-cdd1-484f-be79-fa4a9643e8c2)
 
 ![thumbnail](https://github.com/xxreflextheone/lunarv2lite/assets/100484118/c65c3c63-5ab8-4ed5-8dc7-526cee37029a)
 
