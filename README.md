@@ -1,5 +1,5 @@
 # Lunar LITE
-Lunar LITE is an very slightly edited version of [Lunar](https://github.com/zeyad-mansour/lunar).
+Lunar LITE is a very slightly edited version of [Lunar](https://github.com/zeyad-mansour/lunar).
 
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
