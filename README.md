@@ -1,4 +1,4 @@
-![lunar](https://github.com/user-attachments/assets/ef50f168-e830-405a-845c-8beca17a76f0)# Lunar LITE
+# Lunar LITE
 Lunar LITE is built upon [Lunar](https://github.com/zeyad-mansour/lunar).
 
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
