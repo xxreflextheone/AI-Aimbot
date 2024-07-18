@@ -1,4 +1,4 @@
-# Lunar LITE
+![lunar](https://github.com/user-attachments/assets/ef50f168-e830-405a-845c-8beca17a76f0)# Lunar LITE
 Lunar LITE is built upon [Lunar](https://github.com/zeyad-mansour/lunar).
 
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
@@ -17,6 +17,15 @@ Lunar LITE uses [YOLOv8](https://github.com/ultralytics/ultralytics)
 ![Lunar Lite banner](https://github.com/user-attachments/assets/05864acf-cdd1-484f-be79-fa4a9643e8c2)
 
 ![thumbnail](https://github.com/xxreflextheone/lunarv2lite/assets/100484118/c65c3c63-5ab8-4ed5-8dc7-526cee37029a)
+
+<div align="center">
+
+  
+[![discord server](https://ucarecdn.com/38366345-9cd9-47e2-b4b5-f3586975d0e6/lunar.svg)](https://discord.gg/St8xd8d9Ts)
+
+
+</div>
+
 
 ## Installation
 
