@@ -16,7 +16,7 @@ Lunar LITE uses [YOLOv8](https://github.com/ultralytics/ultralytics)
 
 ![Lunar Lite banner](https://github.com/user-attachments/assets/05864acf-cdd1-484f-be79-fa4a9643e8c2)
 
-![thumbnail](https://github.com/xxreflextheone/lunarv2lite/assets/100484118/c65c3c63-5ab8-4ed5-8dc7-526cee37029a)
+![Thumbnail](https://github.com/user-attachments/assets/afa30dd2-8168-4c64-999e-bedb0bef4dec)
 
 <div align="center">
 
