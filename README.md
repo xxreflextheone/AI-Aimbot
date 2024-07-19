@@ -10,6 +10,11 @@ Lunar V2 can be found [here](https://gannonr.com/downloads).
 
 ## About
 
+What is AI Aimbot?
+Typical aimbot reads memory to find the position of the target. AI only needs to see the screen to find the target, this means it wont be perfect but is a lot harder to detect.
+Instead of needing to update offsets for each game, all you need is a trained AI model. 
+
+
 Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite. Besides being general purpose, the main advantage of using Lunar is that it does not meddle with the memory of other processes.
 
 Lunar LITE uses [YOLOv8](https://github.com/ultralytics/ultralytics)
