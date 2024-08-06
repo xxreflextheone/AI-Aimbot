@@ -1,7 +1,7 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
 
-torch
-torchvision
+torch==2.1.2
+torchvision==0.16.2
 ultralytics
 
 matplotlib>=3.2.2
