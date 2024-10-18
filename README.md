@@ -4,20 +4,19 @@ Lunar LITE is built upon [Lunar](https://github.com/zeyad-mansour/lunar).
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
 ## Lunar V2
-Lunar V2 on the other hand, has 25+ customizable settings, UI, improved accuracy, and support for YoloV5, YoloV7, YoloV8, & TensorRT!
+Lunar V2 on the other hand, has 25+ customizable settings, UI, improved accuracy, and support for YoloV5, YoloV7, YoloV8, & TensorRT. Xbox & PS4 Controller support coming soon.
 
 Lunar V2 can be found [here](https://gannonr.com/downloads).
 
 ## About
 
 What is AI Aimbot?
-Typical aimbot reads memory to find the position of the target. AI only needs to see the screen to find the target, this means it wont be perfect but is a lot harder to detect.
-Instead of needing to update offsets for each game, all you need is a trained AI model. 
+Uses screen capture and an object detection AI model to locate the targets. Does not read or write memory. Think of it as a tiny robot that looks at your screen and tells you the x,y position of the players.
 
 
-Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite. Besides being general purpose, the main advantage of using Lunar is that it does not meddle with the memory of other processes.
+Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite - So some modifying to the sensitivity may be necessary.
 
-Lunar LITE uses [YOLOv8](https://github.com/ultralytics/ultralytics)
+Lunar LITE has been upgraded to [YOLOv8](https://github.com/ultralytics/ultralytics)
 
 ![Lunar Lite banner](https://github.com/user-attachments/assets/05864acf-cdd1-484f-be79-fa4a9643e8c2)
 
