@@ -39,6 +39,8 @@ Lunar LITE has been upgraded to [YOLOv8](https://github.com/ultralytics/ultralyt
 
 3. Run the start.bat file
 
+4. TIP: To make it more undetected, obfuscate the code. 
+
 ## Usage
 If the console is closing immediately, you can run this command to see the errors:
 ```           
