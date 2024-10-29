@@ -58,7 +58,7 @@ if __name__ == "__main__":
                                                                          
 (Neural Network Aimbot)''', "green"))
     
-    print(colored('To get full version of Lunar V2, visit https://gannonr.com/lunarv2 OR join the discord: discord.gg/lunarv2', "red"))
+    print(colored('To get full version of Lunar V2, visit https://gannonr.com/lunarv2 OR join the discord: discord.gg/ai-aimbot', "red"))
 
     path_exists = os.path.exists("lib/config/config.json")
     if not path_exists or ("setup" in sys.argv):
