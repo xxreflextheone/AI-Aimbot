@@ -16,7 +16,7 @@ Uses screen capture and an object detection AI model to locate the targets. Does
 
 Lunar can be modified to work with a variety of FPS games; however, it is currently configured for Fortnite - So some modifying to the sensitivity may be necessary.
 
-Lunar LITE has been upgraded to [YOLOv8](https://github.com/ultralytics/ultralytics)
+Lunar LITE has been upgraded to be compatible with [YOLOv8](https://github.com/ultralytics/ultralytics) through YOLOV11
 
 ![Lunar Lite banner](https://github.com/user-attachments/assets/05864acf-cdd1-484f-be79-fa4a9643e8c2)
 
