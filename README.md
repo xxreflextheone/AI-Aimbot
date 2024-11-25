@@ -25,7 +25,7 @@ Lunar LITE has been upgraded to be compatible with [YOLOv8](https://github.com/u
 <div align="center">
 
   
-[![discord server](https://ucarecdn.com/38366345-9cd9-47e2-b4b5-f3586975d0e6/lunar.svg)](https://discord.gg/St8xd8d9Ts)
+[![discord server](https://ucarecdn.com/daf9ab8d-5961-431b-b21a-3ba544d9d14f/lunar.svg)](https://discord.gg/St8xd8d9Ts)
 
 
 </div>
