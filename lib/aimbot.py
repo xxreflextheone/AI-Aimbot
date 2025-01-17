@@ -87,7 +87,7 @@ class Aimbot:
             print(colored("[!] Check your PyTorch installation, else performance will be poor", "red"))
 
         self.conf = confidence # base confidence threshold (or base detection (0-1)
-        self.iou = 0.80 # NMS IoU (0-1)
+        self.iou = 0.01 # NMS IoU (0-1)
         self.collect_data = collect_data
         self.mouse_delay = mouse_delay
 
