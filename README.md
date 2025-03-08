@@ -34,14 +34,25 @@ Lunar LITE has been upgraded to be compatible with [YOLOv8](https://github.com/u
 ## Installation
 
 1. Install [Python 3.10.5](https://www.python.org/downloads/release/python-3105/)
+   
+2. Make sure CUDA Toolkit 11.8, 12.4, or 12.6 is installed. (12.6 is preferred)
 
-2. Navigate to the root directory. Run the install_requirements.bat file
+3. Navigate to the root directory. Run the install_requirements.bat file
 
-3. Run the start.bat file
+4. Run the start.bat file
 
-4. TIP: To make it more undetected, [obfuscate the code with pyarmor](https://pyarmor.readthedocs.io/en/latest/). 
+5. TIP: To make it more undetected, [obfuscate the code with pyarmor](https://pyarmor.readthedocs.io/en/latest/). 
 
 ## Usage
+If you get the "CUDA IS UNAVAILABLE" error:
+1. Make sure you have one of the CUDA versions listed above
+2. Go to [pytorch.org](https://pytorch.org/get-started/locally/), select the correct CUDA version and run the commanad it gives you
+
+  PyTorch command for CUDA 12.6:
+  ```
+  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+  ```
+
 If the console is closing immediately, you can run this command to see the errors:
 ```           
 python lunar.py
