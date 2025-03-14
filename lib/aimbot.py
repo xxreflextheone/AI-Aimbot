@@ -167,7 +167,10 @@ class Aimbot:
 
         while True:
             start_time = time.perf_counter()
-            frame = np.array(Aimbot.screen.grab(detection_box))
+            initial_frame = Aimbot.screen.grab(detection_box)
+            if initial_frame is None:
+                continue
+            frame = np.array(initial_frame)
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
             boxes = self.model.predict(source=frame, verbose=False, conf=self.conf, iou=self.iou, half=True)
             result = boxes[0]
