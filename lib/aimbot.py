@@ -168,10 +168,10 @@ class Aimbot:
         while True:
             start_time = time.perf_counter()
             initial_frame = Aimbot.screen.grab(detection_box)
-            if initial_frame is None:
+            frame = np.array(initial_frame, dtype=np.uint8)
+            if frame is None or frame.size == 0:
                 continue
-            frame = np.array(initial_frame)
-            frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
             boxes = self.model.predict(source=frame, verbose=False, conf=self.conf, iou=self.iou, half=True)
             result = boxes[0]
             if len(result.boxes.xyxy) != 0: #player detected
