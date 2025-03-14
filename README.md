@@ -41,7 +41,6 @@ Lunar LITE has been upgraded to be compatible with [YOLOv8](https://github.com/u
 
 4. Run the start.bat file
 
-5. TIP: To make it more undetected, [obfuscate the code with pyarmor](https://pyarmor.readthedocs.io/en/latest/). 
 
 ## Usage
 If you get the "CUDA IS UNAVAILABLE" error:
