@@ -6,7 +6,7 @@ Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](http
 ## Lunar V2 (premium version)
 Lunar V2 has 25+ customizable settings, UI, improved accuracy, and support for YoloV8, YoloV10, YoloV11, & TensorRT. Xbox & PS4 Controller support.
 
-Lunar V2 can be found [here](https://gannonr.com/downloads).
+[Download Lunar V2](https://gannonr.com/lunar).
 
 ![Lunar V2 UI](https://github.com/user-attachments/assets/33d30d0a-ce2a-4484-9f9b-5eaaede0d94c)
 
