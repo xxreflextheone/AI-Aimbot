@@ -3,6 +3,17 @@ Lunar LITE is built upon [Lunar](https://github.com/zeyad-mansour/lunar).
 
 Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](https://github.com/zeyad-mansour/lunar).
 
+<div align="center">
+
+
+![downloads](https://ucarecdn.com/a90b3848-a54f-42ff-beab-6c07b5693a73/downloads.svg)<br>
+[![discord server](https://ucarecdn.com/daf9ab8d-5961-431b-b21a-3ba544d9d14f/lunar.svg)](https://discord.gg/St8xd8d9Ts)
+
+
+</div>
+
+
+
 ## Lunar V2 (premium version)
 Lunar V2 has 25+ customizable settings, UI, improved accuracy, and support for YoloV8, YoloV10, YoloV11, & TensorRT. Xbox & PS4 Controller support.
 
@@ -24,13 +35,6 @@ Lunar LITE has been upgraded to be compatible with [YOLOv8](https://github.com/u
 
 ![Thumbnail](https://github.com/user-attachments/assets/afa30dd2-8168-4c64-999e-bedb0bef4dec)
 
-<div align="center">
-
-  
-[![discord server](https://ucarecdn.com/daf9ab8d-5961-431b-b21a-3ba544d9d14f/lunar.svg)](https://discord.gg/St8xd8d9Ts)
-
-
-</div>
 
 
 ## Installation
