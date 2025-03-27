@@ -7,7 +7,7 @@ Lunar LITE offers a triggerbot and updated packages for the orignal [Lunar](http
 
 
 ![downloads](https://ucarecdn.com/a90b3848-a54f-42ff-beab-6c07b5693a73/downloads.svg)<br>
-[![discord server](https://ucarecdn.com/daf9ab8d-5961-431b-b21a-3ba544d9d14f/lunar.svg)](https://discord.gg/St8xd8d9Ts)
+[![discord server](https://ucarecdn.com/50ea9c7c-7384-45bf-b8ee-1f8826b71bdd/lunar1.svg)](https://discord.gg/aiaimbot)
 
 
 </div>
