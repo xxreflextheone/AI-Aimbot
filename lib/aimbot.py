@@ -27,6 +27,8 @@ screen_y = int(screen_res_y / 2)
 
 aim_height = 10 # The lower the number, the higher the aim_height. For example: 2 would be the head and 100 would be the feet.
 
+fov = 350
+
 confidence = 0.45 # How confident the AI needs to be for it to lock on to the player. Default is 45%
 
 use_trigger_bot = True # Will shoot if crosshair is locked on the player
@@ -74,7 +76,7 @@ class Aimbot:
         sens_config = json.load(f)
     aimbot_status = colored("ENABLED", 'green')
 
-    def __init__(self, box_constant = 350, collect_data = False, mouse_delay = 0.0009):
+    def __init__(self, box_constant = fov, collect_data = False, mouse_delay = 0.0009):
         #controls the initial centered box width and height of the "Lunar Vision" window
         self.box_constant = box_constant #controls the size of the detection box (equaling the width and height)
 
@@ -87,7 +89,7 @@ class Aimbot:
             print(colored("[!] Check your PyTorch installation, else performance will be poor", "red"))
 
         self.conf = confidence # base confidence threshold (or base detection (0-1)
-        self.iou = 0.01 # NMS IoU (0-1)
+        self.iou = 0.45 # NMS IoU (0-1)
         self.collect_data = collect_data
         self.mouse_delay = mouse_delay
 
