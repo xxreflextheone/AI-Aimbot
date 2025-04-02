@@ -23,7 +23,9 @@ It features an updated triggerbot, modernized packages, and YOLOv11 support.
 - ✅ Built-in UI  
 - ✅ Improved detection accuracy  
 - ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv11**, and **TensorRT**  
-- ✅ Xbox & PS4 controller support  
+- ✅ Xbox controller support
+- ✅ Logitech GHUB mouse input
+- ✅ Works on AMD and NVIDIA graphics cards
 
 👉 [Download Lunar V2](https://gannonr.com/lunar)
 
