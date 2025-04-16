@@ -1,8 +1,8 @@
-# 🧠 YoloV11 AI Aimbot - Lunar LITE
+# 🧠 YoloV12 AI Aimbot - Lunar LITE
 
 **Lunar LITE** is built on top of the original [Lunar](https://github.com/zeyad-mansour/lunar) project.
 
-It features an updated triggerbot, modernized packages, and YOLOv11 support.
+It features an updated triggerbot, modernized packages, and YOLOv12 support.
 
 <div align="center">
 
@@ -22,12 +22,12 @@ It features an updated triggerbot, modernized packages, and YOLOv11 support.
 - ✅ 25+ customizable settings  
 - ✅ Built-in UI  
 - ✅ Improved detection accuracy  
-- ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv11**, and **TensorRT**  
+- ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv12**, and **TensorRT**  
 - ✅ Xbox controller support
 - ✅ Logitech GHUB mouse input
 - ✅ Works on AMD and NVIDIA graphics cards
 
-👉 [Download Lunar V2](https://gannonr.com/lunar)
+[Download Lunar V2](https://gannonr.com/lunar)
 
 ![Lunar V2 UI](https://github.com/user-attachments/assets/33d30d0a-ce2a-4484-9f9b-5eaaede0d94c)
 
@@ -43,12 +43,12 @@ Lunar uses screen capture + YOLO object detection to locate enemies in real-time
 
 ---
 
-## 🔧 YOLOv11 Support
+## 🔧 YOLOv12 Support
 
 Lunar LITE works with:
 - [YOLOv8](https://github.com/ultralytics/ultralytics)
-- YOLOv10
-- YOLOv11
+- [YOLOv10](https://github.com/ultralytics/ultralytics)
+- [YOLOv12](https://github.com/ultralytics/ultralytics)
 
 ---
 
