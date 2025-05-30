@@ -8,10 +8,11 @@ import sys
 import time
 import torch
 import numpy as np
-import uuid
 import win32api
 from termcolor import colored
 from ultralytics import YOLO
+
+# If you're a skid and you know it clap your hands 👏👏
 
 # Auto Screen Resolution
 screensize = {'X': ctypes.windll.user32.GetSystemMetrics(0), 'Y': ctypes.windll.user32.GetSystemMetrics(1)}
@@ -32,6 +33,9 @@ fov = 350
 confidence = 0.45 # How confident the AI needs to be for it to lock on to the player. Default is 45%
 
 use_trigger_bot = True # Will shoot if crosshair is locked on the player
+
+mouse_methods = ['win32', 'ddxoft']
+mouse_method = mouse_methods[1]  # 0 is win32. 1 is ddxoft.
 
 PUL = ctypes.POINTER(ctypes.c_ulong)
 class KeyBdInput(ctypes.Structure):
@@ -75,6 +79,7 @@ class Aimbot:
     with open("lib/config/config.json") as f:
         sens_config = json.load(f)
     aimbot_status = colored("ENABLED", 'green')
+    mouse_dll = None
 
     def __init__(self, box_constant = fov, collect_data = False, mouse_delay = 0.0009):
         #controls the initial centered box width and height of the "Lunar Vision" window
@@ -92,6 +97,22 @@ class Aimbot:
         self.iou = 0.45 # NMS IoU (0-1)
         self.collect_data = collect_data
         self.mouse_delay = mouse_delay
+        self.mouse_method = mouse_method
+
+        if self.mouse_method.lower() == 'ddxoft':
+            dll_path = os.path.abspath("lib/mouse/dd40605x64.dll")
+            assert os.path.exists(dll_path), f"ddxoft DLL not found at {dll_path}"
+            Aimbot.mouse_dll = ctypes.WinDLL(dll_path)
+            time.sleep(1)
+
+            Aimbot.mouse_dll.DD_btn.argtypes = [ctypes.c_int]
+            Aimbot.mouse_dll.DD_btn.restype = ctypes.c_int
+            init = Aimbot.mouse_dll.DD_btn(0)
+            if not init == 1:
+                print('Failed to initialize ddxoft mouse. Defaulting to Win32')
+                self.mouse_method = 'Win32'
+            else:
+                print(colored('Loaded ddxoft successfully!', 'green'))
 
         print("\n[INFO] PRESS 'F1' TO TOGGLE AIMBOT\n[INFO] PRESS 'F2' TO QUIT")
 
@@ -103,10 +124,15 @@ class Aimbot:
         sys.stdout.write("\033[K")
         print(f"[!] AIMBOT IS [{Aimbot.aimbot_status}]", end = "\r")
 
-    def left_click():
-        ctypes.windll.user32.mouse_event(0x0002) #left mouse down
-        Aimbot.sleep(0.0001)
-        ctypes.windll.user32.mouse_event(0x0004) #left mouse up
+    def left_click(self):
+        if self.mouse_method.lower() == 'ddxoft':
+            Aimbot.mouse_dll.DD_btn(1)
+            Aimbot.sleep(0.001)
+            Aimbot.mouse_dll.DD_btn(2)
+        elif self.mouse_method.lower() == 'win32':
+            ctypes.windll.user32.mouse_event(0x0002) #left mouse down
+            Aimbot.sleep(0.0001)
+            ctypes.windll.user32.mouse_event(0x0004) #left mouse up
 
     def sleep(duration, get_now = time.perf_counter):
         if duration == 0: return
@@ -136,9 +162,12 @@ class Aimbot:
             return
 
         for rel_x, rel_y in Aimbot.interpolate_coordinates_from_center((x, y), scale):
-            Aimbot.ii_.mi = MouseInput(rel_x, rel_y, 0, 0x0001, 0, ctypes.pointer(Aimbot.extra))
-            input_obj = Input(ctypes.c_ulong(0), Aimbot.ii_)
-            ctypes.windll.user32.SendInput(1, ctypes.byref(input_obj), ctypes.sizeof(input_obj))
+            if self.mouse_method.lower() == 'ddxoft':
+                Aimbot.mouse_dll.DD_movR(rel_x, rel_y)
+            elif self.mouse_method.lower() == 'win32':
+                Aimbot.ii_.mi = MouseInput(rel_x, rel_y, 0, 0x0001, 0, ctypes.pointer(Aimbot.extra))
+                input_obj = Input(ctypes.c_ulong(0), Aimbot.ii_)
+                ctypes.windll.user32.SendInput(1, ctypes.byref(input_obj), ctypes.sizeof(input_obj))
             Aimbot.sleep(self.mouse_delay)
 
     #generator yields pixel tuples for relative movement
@@ -211,7 +240,7 @@ class Aimbot:
 
                     if Aimbot.is_target_locked(absolute_head_X, absolute_head_Y):
                         if use_trigger_bot and not Aimbot.is_shooting():
-                            Aimbot.left_click()
+                            self.left_click()
 
                         cv2.putText(frame, "LOCKED", (x1 + 40, y1), cv2.FONT_HERSHEY_DUPLEX, 0.5, (115, 244, 113), 2) #draw the confidence labels on the bounding boxes
                     else:
@@ -221,7 +250,7 @@ class Aimbot:
                         Aimbot.move_crosshair(self, absolute_head_X, absolute_head_Y)
 
             cv2.putText(frame, f"FPS: {int(1/(time.perf_counter() - start_time))}", (5, 30), cv2.FONT_HERSHEY_DUPLEX, 1, (113, 116, 244), 2)
-            cv2.imshow("Lunar Vision", frame)
+            cv2.imshow("Screen Capture", frame)
             if cv2.waitKey(1) & 0xFF == ord('0'):
                 break
 
