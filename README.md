@@ -29,7 +29,7 @@ It features an updated triggerbot, modernized packages, and YOLOv12 support.
 
 [Download Lunar V2](https://gannonr.com/lunar)
 
-![Lunar V2 UI](https://github.com/user-attachments/assets/33d30d0a-ce2a-4484-9f9b-5eaaede0d94c)
+![Lunar V2 UI](https://github.com/user-attachments/assets/173ace44-2a46-45a3-aeba-5c2ce9c9e7b4)
 
 ---
 
