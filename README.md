@@ -6,9 +6,9 @@ It features an updated triggerbot, modernized packages, and YOLOv12 support.
 
 <div align="center">
 
-<img src="https://ucarecdn.com/a90b3848-a54f-42ff-beab-6c07b5693a73/downloads.svg" alt="downloads" /><br>
+<img src="https://ucarecdn.com/97ff66ce-04db-424f-97ad-3f246ebabef6/lunar_downloads.svg" alt="downloads" /><br>
 <a href="https://discord.gg/aiaimbot">
-  <img src="https://ucarecdn.com/50ea9c7c-7384-45bf-b8ee-1f8826b71bdd/lunar1.svg" alt="Join Discord" />
+  <img src="https://ucarecdn.com/c6b01f6a-a399-46e7-b89b-3f39b198888e/lunar_discord.svg" alt="Join Discord" />
 </a>
 
 </div>
