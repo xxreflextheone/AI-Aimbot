@@ -11,6 +11,7 @@ import numpy as np
 import win32api
 from termcolor import colored
 from ultralytics import YOLO
+import socket
 
 # If you're a skid and you know it clap your hands 👏👏
 
@@ -34,8 +35,10 @@ confidence = 0.45 # How confident the AI needs to be for it to lock on to the pl
 
 use_trigger_bot = True # Will shoot if crosshair is locked on the player
 
-mouse_methods = ['win32', 'ddxoft']
-mouse_method = mouse_methods[1]  # 0 is win32. 1 is ddxoft.
+mouse_methods = ['win32', 'ddxoft', 'makcu']
+mouse_method = mouse_methods[1]  # 0 is win32. 1 is ddxoft. 2 is makcu
+
+second_pc_ip = '192.67.67.67' # change this
 
 PUL = ctypes.POINTER(ctypes.c_ulong)
 class KeyBdInput(ctypes.Structure):
@@ -71,15 +74,36 @@ class POINT(ctypes.Structure):
     _fields_ = [("x", ctypes.c_long), ("y", ctypes.c_long)]
 
 
+class MAKCU_UDP:
+    def __init__(self):
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    def send(self, msg):
+        self.sock.sendto(msg.encode("utf-8"), (second_pc_ip, 5005))
+    
+    def move(self, x, y):
+        msg = f"MOVE:{int(x)},{int(y)}"
+        self.send(msg)
+
+    def click(self):
+        self.send("CLICK:LEFT")
+
 class Aimbot:
     extra = ctypes.c_ulong(0)
     ii_ = Input_I()
     screen = mss.mss()
-    pixel_increment = 1 #controls how many pixels the mouse moves for each relative movement
+
+    pixel_increment = 1 # controls how many pixels the mouse moves for each relative movement
+
     with open("lib/config/config.json") as f:
         sens_config = json.load(f)
     aimbot_status = colored("ENABLED", 'green')
+
     mouse_dll = None
+    makcu = None
+
+    if mouse_method.lower() == "makcu":
+        makcu = MAKCU_UDP()
 
     def __init__(self, box_constant = fov, collect_data = False, mouse_delay = 0.0009):
         #controls the initial centered box width and height of the "Lunar Vision" window
@@ -125,14 +149,18 @@ class Aimbot:
         print(f"[!] AIMBOT IS [{Aimbot.aimbot_status}]", end = "\r")
 
     def left_click(self):
-        if self.mouse_method.lower() == 'ddxoft':
-            Aimbot.mouse_dll.DD_btn(1)
-            Aimbot.sleep(0.001)
-            Aimbot.mouse_dll.DD_btn(2)
-        elif self.mouse_method.lower() == 'win32':
-            ctypes.windll.user32.mouse_event(0x0002) #left mouse down
-            Aimbot.sleep(0.0001)
-            ctypes.windll.user32.mouse_event(0x0004) #left mouse up
+        match self.mouse_method.lower():
+            case 'ddxoft':
+                Aimbot.mouse_dll.DD_btn(1)
+                Aimbot.sleep(0.001)
+                Aimbot.mouse_dll.DD_btn(2)
+            case 'win32':
+                ctypes.windll.user32.mouse_event(0x0002)
+                Aimbot.sleep(0.0001)
+                ctypes.windll.user32.mouse_event(0x0004)
+            case 'makcu':
+                if Aimbot.makcu:
+                    Aimbot.makcu.click()
 
     def sleep(duration, get_now = time.perf_counter):
         if duration == 0: return
@@ -162,12 +190,16 @@ class Aimbot:
             return
 
         for rel_x, rel_y in Aimbot.interpolate_coordinates_from_center((x, y), scale):
-            if self.mouse_method.lower() == 'ddxoft':
-                Aimbot.mouse_dll.DD_movR(rel_x, rel_y)
-            elif self.mouse_method.lower() == 'win32':
-                Aimbot.ii_.mi = MouseInput(rel_x, rel_y, 0, 0x0001, 0, ctypes.pointer(Aimbot.extra))
-                input_obj = Input(ctypes.c_ulong(0), Aimbot.ii_)
-                ctypes.windll.user32.SendInput(1, ctypes.byref(input_obj), ctypes.sizeof(input_obj))
+            match self.mouse_method.lower():
+                case 'ddxoft':
+                    Aimbot.mouse_dll.DD_movR(rel_x, rel_y)
+                case 'win32':
+                    Aimbot.ii_.mi = MouseInput(rel_x, rel_y, 0, 0x0001, 0, ctypes.pointer(Aimbot.extra))
+                    input_obj = Input(ctypes.c_ulong(0), Aimbot.ii_)
+                    ctypes.windll.user32.SendInput(1, ctypes.byref(input_obj), ctypes.sizeof(input_obj))
+                case 'makcu':
+                    if Aimbot.makcu:
+                        Aimbot.makcu.move(rel_x, rel_y)
             Aimbot.sleep(self.mouse_delay)
 
     #generator yields pixel tuples for relative movement
