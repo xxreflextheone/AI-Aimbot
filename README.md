@@ -19,12 +19,13 @@ It features an updated triggerbot, modernized packages, and YOLOv12 support.
 
 **Lunar V2** includes:
 
-- ✅ 25+ customizable settings  
-- ✅ Built-in UI  
-- ✅ Improved detection accuracy  
-- ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv12**, and **TensorRT**  
+- ✅ 25+ customizable settings
+- ✅ Built-in UI
+- ✅ Improved detection accuracy
+- ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv12**, and **TensorRT**
 - ✅ Xbox controller support
 - ✅ Logitech GHUB mouse input
+- ✅ Makcu support (UDP)
 - ✅ Works on AMD and NVIDIA graphics cards
 
 [Download Lunar V2](https://gannonr.com/lunar)
