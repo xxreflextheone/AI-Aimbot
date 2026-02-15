@@ -7,7 +7,7 @@ It features an updated triggerbot, modernized packages, and YOLOv12 support.
 <div align="center">
 
 <img src="https://ucarecdn.com/97ff66ce-04db-424f-97ad-3f246ebabef6/lunar_downloads.svg" alt="downloads" /><br>
-<a href="https://discord.gg/aiaimbot">
+<a href="https://discord.gg/EmKe5U8Kbr">
   <img src="https://ucarecdn.com/c6b01f6a-a399-46e7-b89b-3f39b198888e/lunar_discord.svg" alt="Join Discord" />
 </a>
 
@@ -118,4 +118,4 @@ python lunar.py collect_data
 Support is only **guaranteed** for **Lunar V2**.  
 Please don’t expect full help for the free **LITE** version.
 
-👉 [Join our Discord](https://discord.gg/aiaimbot)
+👉 [Join our Discord](https://discord.gg/EmKe5U8Kbr)
