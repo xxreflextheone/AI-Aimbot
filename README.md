@@ -53,8 +53,9 @@ Lunar LITE works with:
 
 ---
 
-## Models
-Community uploaded models: https://mossymodels.com
+## Where to Find Models
+
+[MossyModels](https://mossymodels.com) is a growing community archive for YOLO models, built to make sharing and discovering models simple. Browse models by game, compare ratings and downloads, and upload your own ONNX or PyTorch (`.pt`) models for others to use.
 
 ---
 
